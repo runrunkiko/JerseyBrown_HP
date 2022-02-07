@@ -15,7 +15,6 @@ $('#slideContents').slick({
 	fade: true,
 });
 	
-
 // ミルクのたぷたぷ
 var unit = 100,
     canvasList, // キャンバスの配列
