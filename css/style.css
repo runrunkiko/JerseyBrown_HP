@@ -245,12 +245,12 @@ h1 .logo{
     height: 440px;
     transform: matrix(-0.31, -0.95, 0.95, -0.31, 0, 0);
     left: 70%;
-    margin-top: -200px;
+    margin-top: -220px;
     margin-left: 3vw;
 }
 .drip-milk{
     position: absolute;
-    top: 4%;
+    top: 7%;
     right: 20%;
 }
 
@@ -325,8 +325,8 @@ canvas{
     line-height: 1.676;
     color: #1A2D51;
     font-weight: 500;
-    /* margin: 0 0 0 4vw; */
     transform: matrix(0.96, -0.28, 0.28, 0.96, 0, 0);
+    margin-left: 4vw;
 }
 .main-ttl-wrap h4 span{
     color:#528DFC;
@@ -354,3 +354,128 @@ canvas{
     margin-top: 10vw;
     margin-left: 4vw;
     }
+
+/* product-list */
+.number{
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    color: #707070;
+}
+.product-list p{
+    line-height: 2.4;
+    font-size: 25px;
+    font-weight: 500;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    display: inline;
+    padding: 9px;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.product-list p span{
+    color: #528DFC;
+}
+/* product-wrap1 */
+.product-wrap1{
+    position: relative;
+    margin-top: 80px;
+    margin-left: 5vw;
+
+}
+.product-wrap1 h2{
+    position: absolute;
+    display: block;
+    margin-top:25px;
+    left: 460px;
+}
+.product1{
+    position: absolute;
+    width: 592px;
+}
+.product-wrap1 h3{
+    position: absolute;
+    top: 290px;
+}
+.illust_milk{
+    position: absolute;
+    width: 95px;
+    top: 230px;
+    left: 450px;
+    transform: matrix(0.98, 0.21, -0.21, 0.98, 0, 0);
+}
+/* illust-wrap */
+.illust-wrap{
+    position: relative;
+    top: 120px;
+    left: 70vw;
+}
+.yogurt{
+    position: absolute;
+    width: 149px;
+}
+.star6{
+    position: absolute;
+    width: 53px;
+}
+/* product-wrap2 */
+.product-wrap2{
+    position: relative;
+    padding-top: 300px;
+    margin-left: 50vw;
+}
+.product-wrap2 h2{
+    position: absolute;
+    margin-top: 18px;
+    left: 480px;
+}
+.product-wrap2 h3{
+    position: absolute;
+    margin-top: 260px;
+}
+.product2{
+    position: absolute;
+    width: 580px;
+    height: 378px;
+    /* top: 100px; */
+}
+.illust_scop{
+    position: absolute;
+    width: 80px;
+    margin-top: 110px;
+    left: 480px;
+    transform: matrix(-0.98, -0.19, -0.19, 0.98, 0, 0);
+}
+/* product-wrap3 */
+.product-wrap3{
+    position: relative;
+    padding-top: 330px;
+    margin-left: 3vw;
+}
+.product-wrap3 h2{
+    position: absolute;
+    margin-top: 35px;
+    left: 60px;
+}
+.product-wrap3 h3{
+    position: absolute;
+    margin-top: 260px;
+    left: 500px;
+}
+.product3{
+    position: absolute;
+    width: 606px;
+    left: 40px;
+}
+.stars2{
+    position: absolute;
+    margin-top: 200px;
+    left: 20px; 
+}
+.bin{
+    position: absolute;
+    width: 100px;
+    margin-top: 280px;
+    left: 70px;
+    transform: matrix(0.98, -0.17, 0.17, 0.98, 0, 0);
+}
