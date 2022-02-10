@@ -721,6 +721,7 @@ canvas{
 }
 
 /* ------------------ABOUTページ */
+/* FV */
 .fv-wrap2{
     position: relative;
     margin-top: -58px;
@@ -755,4 +756,21 @@ canvas{
 }
 .slide3-wrap span{
     color: #FAE053;
+}
+
+/* about-first-area */
+.first-contents{
+    width: 929px;
+    height: 978px;
+    background: #FFF8EF;
+    border: 6px dashed #70707180;
+    border-radius: 25px;
+    padding: 78px;
+}
+.first-contents p{
+    color: #1A2D51;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.68;
+    margin-bottom: 5vh;
 }
