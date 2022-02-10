@@ -719,3 +719,40 @@ canvas{
     top: 65%;
     right: 3%;
 }
+
+/* ------------------ABOUTページ */
+.fv-wrap2{
+    position: relative;
+    margin-top: -58px;
+}
+.fv-wrap2 .logo{
+    top: -90px;
+}
+.slide3{
+    background: url(../about/img/FV3.png) no-repeat center center;
+    background-size: cover;
+}
+.slide3-ttl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -80px 20px 0 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 100px 0 0 60px;
+}
+.slide3-wrap h2{
+    font-size: 2.5vw;
+    font-weight: 450;
+    line-height: 1.625;
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-align: center;
+    width: 700px;
+}
+.slide3-wrap span{
+    color: #FAE053;
+}
