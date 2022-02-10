@@ -44,6 +44,7 @@ body{
     align-items: center;
     }
 .nav-list a{
+    line-height: 1.4;
     margin-left: 2.5vw;
     text-decoration: none;
     font-size: 16px;
@@ -806,6 +807,7 @@ ul{
 }
 .milk-illust{
     width: 5vw;
+    margin-top: 1vh;
 }
 .jersey-illust{
     width: 9vw;
