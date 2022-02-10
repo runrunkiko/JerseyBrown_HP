@@ -38,8 +38,9 @@ body{
 /* nav-list--------- */
 .nav-list{
     display: flex;
-    justify-content: flex-end;  
-    margin:30px 50px 0 50px;
+    justify-content: flex-end;
+    margin-top:30px;
+    margin-right: 4%;
     align-items: center;
     }
 .nav-list a{
@@ -147,7 +148,8 @@ h1 .logo{
     margin-left: 20px;
 }
 .border{
-    background: repeating-linear-gradient(-45deg, #FBF3BB, #FBF3BB 16px, white 15px, white 28px);
+    background: repeating-linear-gradient(-45deg, #FAE053, #FAE053 16px, white 15px, white 28px);
+    opacity: 0.5;
     width: 40%;
     height: 3vh;
     margin: 0 auto;
@@ -760,17 +762,64 @@ canvas{
 
 /* about-first-area */
 .first-contents{
-    width: 929px;
-    height: 978px;
+    width: 65%;
     background: #FFF8EF;
-    border: 6px dashed #70707180;
+    border: 0.3vw dashed #70707180;
     border-radius: 25px;
-    padding: 78px;
+    padding: 5% 2% 2% 7%;
+    margin: 8vh auto 0 auto;
 }
 .first-contents p{
     color: #1A2D51;
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 1.4vw;
+    font-weight: 500;
     line-height: 1.68;
     margin-bottom: 5vh;
+}
+/* about-first-area */
+/* area-nav */
+.area-nav{
+    margin: 13vh 0 10vh 0;
+    text-align: center;
+}
+ul{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.fa-solid{
+
+    color: #707070;
+}
+.area-nav a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.3vw;
+    color: #000000;
+    margin: 2vh 0;
+}
+.softcream-illust{
+    width: 5vw;
+    margin-bottom: -10px;
+}
+.milk-illust{
+    width: 5vw;
+}
+.jersey-illust{
+    width: 9vw;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+.border1{
+    border: 2.5px solid #707070; 
+    height: 25vh;
+    opacity: 0.31;
+    border-radius: 5px;
+}
+.border2{
+    width: 68vw;
+    height: 4vh;
+    margin-bottom: 30px;
 }
