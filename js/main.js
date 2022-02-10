@@ -117,3 +117,4 @@ function drawSine(canvas, t, zoom, delay) {
 }
 
 init();
+

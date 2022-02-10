@@ -314,6 +314,7 @@ canvas{
 /* second-area-------------------*/
 .second-area{
     background-color: #FCEEDD;
+    /* height: 200vh; */
 }
 .main-ttl-wrap{
     background-color: #FCEEDD;
@@ -527,7 +528,6 @@ canvas{
 .illustset-2{
     width: 35vw;
     position: absolute;
-    margin-top: 20px;
 }
 .sub-box a{
     position: relative;
@@ -555,6 +555,154 @@ canvas{
     margin: 20% 15% 0 0;
 }
 .box-footer{
+    background: url(../img/background-bottom.png) repeat center center;
+    background-size: cover;
     width: 100%;
-    height: 70%;
+    height: 120vh;
+    margin-top: -380px
+}
+/* button-wrap */
+.button-wrap{
+    width: 100%;
+    padding: 0 10vw;
+    margin-top: -52vh;
+    float: center;
+}
+.contents{
+    padding-top: 76px;
+}
+.button-wrap h2{
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    margin: auto;
+    font-weight: 400;
+    text-shadow: 15px 15px 10px #00000029;
+    text-align: center;
+}
+.button-wrap a{
+    display: block;
+    font-size: 2vw;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin: auto;
+    text-decoration: none;
+    text-shadow: 15px 15px 10px #00000029;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.button-wrap p{
+    display: block;
+    font-size: 1.2vw;
+    color:#fff;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 9px;
+}
+.button-box1{
+    background: url(../img/button1.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 100%;
+    height: 240px;
+}
+.button-subwrap1{
+    display: flex;
+    justify-content: space-between;
+}
+.button-box2{
+    background: url(../img/button2.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 48%;
+    height: 240px;
+    margin: 2% 0;
+}
+.button-box3{
+    background: url(../img/button3.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 48%;
+    height: 240px;
+    margin: 2% 0;
+}
+.button-subwrap2{
+    display: flex;
+    justify-content: space-between;
+}
+.button-box4{
+    background: url(../img/button4.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 48%;
+    height: 240px;
+}
+.button-box5{
+    background: url(../img/button5.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 48%;
+    height: 240px;
+}
+/* footer */
+.logo-footer{
+    display: block;
+    width: 214px;
+    margin: 100px auto 0 auto;
+}
+.adress{
+    text-align: center;
+    color: #707070;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 28px 0 30px 0;
+    letter-spacing: 0.1rem;
+}
+/* page_top ボタン */
+#page_top{
+  width: 70px;
+  height: 70px;
+  margin: -10vh 3% 0 auto;
+  background: #707070;
+  opacity: 0.8;
+  border-radius: 50%;
+  z-index: 100;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f106';
+  font-size: 40px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 20px;
+  margin: auto;
+  text-align: center;
+}
+.footer-block{
+    background: url(../img/fotter_background.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+.Copyright{
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    display: block;
+    top: 65%;
+    right: 3%;
 }
