@@ -777,7 +777,7 @@ canvas{
     line-height: 1.68;
     margin-bottom: 5vh;
 }
-/* about-first-area */
+/* about-second-area */
 /* area-nav */
 .area-nav{
     margin: 13vh 0 10vh 0;
@@ -804,6 +804,7 @@ ul{
 .softcream-illust{
     width: 5vw;
     margin-bottom: -10px;
+    transform: matrix(0.94, 0.34, -0.34, 0.94, 0, 0);
 }
 .milk-illust{
     width: 5vw;
@@ -824,4 +825,145 @@ ul{
     width: 68vw;
     height: 4vh;
     margin-bottom: 30px;
+}
+
+/* softcream-block */
+.softcream-block{
+    background: url(../about/img/softcream_background.png) no-repeat 30% -10%;
+    background-position: cover;
+}
+.title-icon{
+    font-size: 2vw;
+    font-weight: 500;
+    text-align: center;
+    padding: 3% 0 10% 0;
+    line-height: 1.4;
+}
+.softcream-illust2{
+    width: 7%;
+    transform: matrix(0.93, 0.37, -0.37, 0.93, 0, 0);
+}
+.article-wrap{
+    display: flex;
+    align-items: center;
+    margin: 0 auto 20vh auto;
+    width: 97%;
+    height: 15%;
+
+}
+.article-img{
+    border-radius: 30px;
+    border: 2px solid #CCC8C8;
+    width: 50vw;
+}
+
+.text-wrap{
+    background-color: #fff;
+    border-radius: 30px;
+    border: 2px solid #CCC8C8;
+    padding: 4%;
+    z-index: 10;
+}
+.text-wrap h2{
+    font-size: 1.7vw;
+    font-weight: 500;
+    line-height: 1.95;
+    padding: 0.5% 0 5% 0;
+}
+.text-wrap h2 span{
+    color: #528DFC;
+}
+.text-wrap p{
+    width: 95%;
+    display: block;
+    padding: 3% auto  auto;
+    font-size: 1.3vw;
+    line-height: 2.1;
+}
+/* 1つ目のブロック */
+.article-wrap1{
+    position: relative;
+}
+.article-wrap1 h3{
+    position: absolute;
+    font-size: 5vw;
+    font-weight: 500;
+    color: #1A2D51;
+    top: -4%;
+    right: 3%;
+}
+.article1-illust{
+    position: absolute;
+    width: 6%;
+    transform: matrix(0.98, -0.17, 0.17, 0.98, 0, 0);
+    top: 85%;
+    left: 3%;
+    z-index: 100;
+}
+.text-wrap1{
+    margin-left: 2.5%;
+
+}
+.article-img1{
+    margin-left: -2.5%;
+    margin-top: 75px;
+}
+/* 2つ目のブロック */
+.article-wrap2{
+    position: relative;
+}
+.article-wrap2 h3{
+    position: absolute;
+    font-size: 5vw;
+    font-weight: 500;
+    color: #1A2D51;
+    top: 0;
+    left: 3%;
+}
+.article2-illust{
+    position: absolute;
+    width: 20%;
+    top: 78%;
+    right: 2%;
+    z-index: 100;
+}
+.article-wrap2 .article-img{
+    width: 45vw;
+}
+.text-wrap2{
+    margin-right: 2.5%;
+
+}
+.article-img2{
+    margin-left: 5%;
+    margin-top: 80px;
+}
+/* 3つ目のブロック */
+.article-wrap3{
+    position: relative;
+}
+.article-wrap3 h3{
+    position: absolute;
+    font-size: 5vw;
+    font-weight: 500;
+    color: #1A2D51;
+    top: 0;
+    right: 3%;
+}
+.article3-illust{
+    position: absolute;
+    width: 14%;
+    top: 78%;
+    left: -2%;
+    z-index: 100;
+}
+.article-wrap3 .article-img{
+    width: 45vw;
+}
+.text-wrap3{
+    margin-left: 2%;
+}
+.article-img3{
+    margin-left: -3.5%;
+    margin-top: 80px;
 }
