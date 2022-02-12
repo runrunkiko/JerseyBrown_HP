@@ -1121,14 +1121,20 @@ ul{
     width: 23vw;
 }
 .milk-block5 .main-ttl{
+    margin-top: 2%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
+.brand{
+    width: 8vw;
+    margin: 2% 30px 0 600px;
+}
 .tokachi{
-    width: 400px;
-    font-size: 50px;
+    width: 1200px;
+    font-size: 60px;
     letter-spacing: 0.1em;
+    margin-right: 4%;
     color: #1A2D51;
     font-weight: bold;
     font-family: 'Kosugi Maru', sans-serif;
@@ -1138,7 +1144,20 @@ ul{
 .milk-block5-box{
     margin-top: 50px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jersey-takada{
+    border-radius: 1200px;
+    margin-left: 10%; 
 }
 .introduce{
+    width: 1200px;
+    font-size: 1.5vw;
+    line-height: 2;
+    margin: 2% 0 0 7%;
+}
+.airmail2{
     width: 300px;
+    opacity: 0.6;
 }
