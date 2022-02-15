@@ -977,48 +977,25 @@ ul{
     margin-bottom: 32px;
     padding-bottom: 24%;
 }
+.illust_milk2{
+    width: 5%;
+    position: relative;
+}
+.circle{
+    width: 23%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20%;
+}
+.icon2-wrap{
+    margin-top: -23%;
+}
 .milk-block span{
     background-image:linear-gradient(rgba(0 0 0 / 0) 60%, #FBE675 60%);
     font-weight: 500;
 }
-.title-icon2{
-    position: relative;
-    top: -3vh;
-}
-.circle{
-    position: absolute;
-    top: 200px;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #fff;
-}
-.illust_milk2{
-    position: absolute;
-    width: 57px;
-    z-index: 10;
-    top: 230px;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-}
-.title-icon2 h2{
-    position: absolute;
-    font-size: 1vw;
-    z-index: 10;
-    top: 335px;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-}
 .milk-block1{
-    padding: 25% 3% 3% 3%;
+    padding: 0 3% 3% 3%;
     display: flex;
 }
 .jersey1{
@@ -1168,18 +1145,25 @@ ul{
 }
 
 /* message-block */
-.message-box-top{
-    width: 100%;
-    margin-top: -20%;
-}
 .message-block{
-    /* background: url(../about/img/milk_block_background_w.png) no-repeat 30% 50%; */
     background: #fff;
     background-size: cover;
     width: 100%;
     height: 200vh;
-
+    position: relative;
+}
+.message-box-top{
+    width: 100%;
+    margin-top: -20%;
 }
 .jersey-illust3{
-    width: 13%;
+    width: 35%;
+}
+.title-icon3{
+    position: absolute;
+    top:-80px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
 }
