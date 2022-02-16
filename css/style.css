@@ -571,17 +571,13 @@ canvas{
     margin-top: -52vh;
     float: center;
 }
-.contents{
-    padding-top: 76px;
-    z-index: 10;
-}
 .button-wrap h2{
-    font-size: 1.5vw;
-    color: #FFFFFF;
-    margin: auto;
+    display: block;
+    font-size: 1.2vw;
+    color:#fff;
     font-weight: 400;
-    text-shadow: 15px 15px 10px #00000029;
     text-align: center;
+    padding-top: 9px;
 }
 .button-wrap a{
     display: block;
@@ -597,18 +593,37 @@ canvas{
 }
 .button-wrap p{
     display: block;
-    font-size: 1.2vw;
+    font-size: 1vw;
     color:#fff;
     font-weight: 400;
     text-align: center;
     padding-top: 9px;
 }
+.button1,.button2,.button3,.button4,.button5{
+    position: relative;
+}
+.contents1,.contents2,.contents3,.contents4,.contents5{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 .button-box1{
     background: url(../img/button1.png) no-repeat center center;
     background-size: cover;
     border-radius: 20px;
-    width: 100%;
+    width: 82vw;
     height: 240px;
+    cursor: pointer;
+    filter: brightness(80%);
+    transition-duration: 0.6s;
+}
+.button-box1:hover{
+  filter: brightness(1);
+  transform: scale(1.03);
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
 }
 .button-subwrap1{
     display: flex;
@@ -618,17 +633,37 @@ canvas{
     background: url(../img/button2.png) no-repeat center center;
     background-size: cover;
     border-radius: 20px;
-    width: 48%;
+    margin-top: 4%;
+    width: 40vw;
     height: 240px;
-    margin: 2% 0;
+    cursor: pointer;
+    filter: brightness(80%);
+    transition-duration: 0.6s;
+    margin-right: 1vw;
+}
+.button-box2:hover{
+  filter: brightness(1);
+  transform: scale(1.03);
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
 }
 .button-box3{
     background: url(../img/button3.png) no-repeat center center;
     background-size: cover;
     border-radius: 20px;
-    width: 48%;
+    margin-top: 4%;
+    width: 40vw;
     height: 240px;
-    margin: 2% 0;
+    cursor: pointer;
+    filter: brightness(80%);
+    transition-duration: 0.6s;
+    margin-left: 1vw;
+}
+.button-box3:hover{
+  filter: brightness(1);
+  transform: scale(1.03);
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
 }
 .button-subwrap2{
     display: flex;
@@ -638,22 +673,33 @@ canvas{
     background: url(../img/button4.png) no-repeat center center;
     background-size: cover;
     border-radius: 20px;
-    width: 48%;
+    margin-top: 4%;
+    width: 40vw;
     height: 240px;
+    cursor: pointer;
+    filter: brightness(80%);
+    transition-duration: 0.6s;
+    margin-right: 1vw;
+}
+.button-box4:hover{
+  filter: brightness(1);
+  transform: scale(1.03);
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
 }
 .button-box5{
     background: url(../img/button5.png) no-repeat center center;
     background-size: cover;
     border-radius: 20px;
-    width: 48%;
+    margin-top: 4%;
+    width: 40vw;
     height: 240px;
-}
-.button{
     cursor: pointer;
     filter: brightness(80%);
     transition-duration: 0.6s;
+    margin-left: 1vw;
 }
-.button:hover{
+.button-box5:hover{
   filter: brightness(1);
   transform: scale(1.03);
   transition-duration: 0.6s;
