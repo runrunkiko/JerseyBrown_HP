@@ -280,6 +280,9 @@ h1 .logo{
     height: 5vh;
     transform: matrix(0.97, -0.26, 0.26, 0.97, 0, 0);
     margin-right: 10vw;
+    animation: star1 linear infinite;
+    transform-origin: center center;
+    animation:star1 4.6s both;
 }
 .star2{
     width: 100%;
@@ -315,8 +318,13 @@ h1 .logo{
  
 @keyframes milk-pot {
     0%   { transform: rotate(310deg); }
-    50% { transform: rotate(248deg); }
+    50%  { transform: rotate(248deg); }
     100% { transform: rotate(252deg); }
+}
+/* 星のアニメーション */
+@keyframes star1{
+    0%   { transform: rotate(-210deg) opacity: 1; }
+    100% { transform:  translateY(850px) translateX(-100px); opacity: 0;}
 }
 
 /* ミルクのたぷたぷ */
