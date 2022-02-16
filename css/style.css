@@ -12,6 +12,10 @@ body{
     overflow: hidden;
 }
 
+.has-child li{
+    display: none;
+}
+
 /*  slideshow
 --------------------------------*/
 .slide{
@@ -36,18 +40,23 @@ body{
 /*  header
 --------------------------------*/
 /* nav-list--------- */
+#nav{
+    position: relative;
+}
 .nav-list{
+    position: absolute;
     display: flex;
     justify-content: flex-end;
-    margin-top:30px;
-    margin-right: 4%;
+    top:30px;
+    right: 4%;
     align-items: center;
+    z-index: 10;
     }
 .nav-list a{
     line-height: 1.4;
     margin-left: 2.5vw;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.5vw;
     color: #000000;
 }
 .contact-wrap{
@@ -64,7 +73,6 @@ body{
 /* fv-wrap--------- */
 .fv-wrap{
     position: relative;
-    margin-top: -58px;
 }
 h1 .logo{
     width: 317px;
@@ -86,7 +94,6 @@ h1 .logo{
     letter-spacing: 0.1em;
     position: absolute;
     top: 80%; 
-    /* ↑800/1366=0.586 */
     left: 9%;
     width: 700px;
 }
@@ -599,10 +606,10 @@ canvas{
     text-align: center;
     padding-top: 9px;
 }
-.button1,.button2,.button3,.button4,.button5{
+.button1,.button2,.button3,.button4,.button5,.button6{
     position: relative;
 }
-.contents1,.contents2,.contents3,.contents4,.contents5{
+.contents1,.contents2,.contents3,.contents4,.contents5,.contents6{
     position: absolute;
     z-index: 10;
     top: 50%;
@@ -709,13 +716,13 @@ canvas{
 /* footer */
 .logo-footer{
     display: block;
-    width: 214px;
+    width: 17%;
     margin: 100px auto 0 auto;
 }
 .adress{
     text-align: center;
     color: #707070;
-    font-size: 17px;
+    font-size: 1.7vw;
     line-height: 1.7;
     margin: 28px 0 30px 0;
     letter-spacing: 0.1rem;
@@ -773,10 +780,12 @@ canvas{
 /* FV */
 .fv-wrap2{
     position: relative;
-    margin-top: -58px;
 }
 .fv-wrap2 .logo{
     top: -90px;
+}
+.nav-list2{
+    margin-top: -90px;
 }
 .slide3{
     background: url(../about/img/FV3.png) no-repeat center center;
@@ -1217,6 +1226,7 @@ ul{
 .message-block{
     position: relative;
     height: 100%;
+    margin-bottom: 15%;
 }
 .title-icon3{
     margin-top: 10%;
@@ -1257,22 +1267,32 @@ ul{
     background: url(../about/img/button6.png) no-repeat center center;
     background-size: cover;
     border-radius: 30px;
-    width: 90%;
-    height: 20vh;
+    width: 85%;
+    height: 23vh;
     margin: 0 auto;
     position: relative;
+    cursor: pointer;
+    filter: brightness(80%);
+    transition-duration: 0.6s;
 }
-.button-box6 h2{
+.button6 h2{
     color:#fff;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: center;
     display: block;
 }
-.button-box6 a{
+.button6 a{
     text-decoration: none;
     color:#fff;
     text-align: center;
     display: block;
     font-size: 2.5vw;
     text-shadow: 15px 15px 10px #00000029;
+    padding-top: 5%;
+}
+.button-box6:hover{
+  filter: brightness(1);
+  transform: scale(1.03);
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
 }
