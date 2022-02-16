@@ -1212,15 +1212,15 @@ ul{
     background-size: cover;
     border-radius: 30px;
     width: 90%;
-    height: 28vh;
+    height: 20vh;
     margin: 0 auto;
+    position: relative;
 }
 .button-box6 h2{
     color:#fff;
     font-size: 2vw;
     text-align: center;
     display: block;
-    margin-bottom: 1.5%;
 }
 .button-box6 a{
     text-decoration: none;
@@ -1228,4 +1228,5 @@ ul{
     text-align: center;
     display: block;
     font-size: 2.5vw;
+    text-shadow: 15px 15px 10px #00000029;
 }
