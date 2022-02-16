@@ -245,30 +245,33 @@ h1 .logo{
 }
 
 /* milk-area-------------------*/
-.milk-area{
+.milk-area-wrap{
     position: relative;
 }
-.milk-pot{
-    /* position: relative; */
+.milk-area{
     position: absolute;
+    top: 0;
+    right: 1%;
+}
+.milk-pot{
     width: 440px;
     height: 440px;
     transform: matrix(-0.31, -0.95, 0.95, -0.31, 0, 0);
-    left: 70%;
-    margin-top: -220px;
-    margin-left: 3vw;
+    margin-top: -245px;
+    margin-left: 32%;
+    display: block;
 }
 .drip-milk{
     position: absolute;
-    top: 7%;
-    right: 20%;
+    margin-top: -48%;
+    margin-left: -64%;
 }
 
 /* 星たち */
 .stars{
     position: absolute;
     top: 10%;
-    right: 28%;
+    right: 86%;
     z-index: 100;
     transform: matrix(0.93, 0.36, -0.36, 0.93, 0, 0);
 }
@@ -302,6 +305,18 @@ h1 .logo{
     transform: matrix(0.87, -0.5, 0.5, 0.87, 0, 0);
     margin-left: 2vw;
     margin-top: 10vh;
+}
+/* ミルクのアニメーション */
+.milk-pot{
+    animation: milk-pot linear infinite;
+    transform-origin: center center;
+    animation: milk-pot 5s both;
+}
+ 
+@keyframes milk-pot {
+    0%   { transform: rotate(310deg); }
+    50% { transform: rotate(248deg); }
+    100% { transform: rotate(252deg); }
 }
 
 /* ミルクのたぷたぷ */
