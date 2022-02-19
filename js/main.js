@@ -124,3 +124,30 @@ $(function(){
     $("html, body").animate({scrollTop: 0 }, 600, "swing");
   });
 });
+
+//スクロールしたらビンが倒れる
+
+$(function(){
+    $(window).scroll(function(){
+    $('.milk-pot').each(function(){
+        var elemPos = $(this).offset().top;
+        console.log(elemPos);
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > elemPos - windowHeight + 50){
+            console.log('きたよ');
+            $('.milk-pot').addClass('milkStart');
+            $('.drip-milkAdd').addClass('drip-milk');
+            setTimeout(function () {
+                $('.star1Add').addClass('star1');
+                $('.star2Add').addClass('star2');
+                $('.star3Add').addClass('star3');
+                $('.star4Add').addClass('star4');
+                $('.star5Add').addClass('star5');
+                }, 5000);
+        }
+
+    });
+    });
+
+});

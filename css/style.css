@@ -12,10 +12,6 @@ body{
     overflow: hidden;
 }
 
-.has-child li{
-    display: none;
-}
-
 /*  slideshow
 --------------------------------*/
 .slide{
@@ -68,6 +64,30 @@ body{
     height: 21px;
     margin-left: 4px;
     margin-top: 5px;
+}
+.has-child{
+    position: relative;
+}
+.has-child ul{
+    display: none;
+    position: absolute;
+    width: 300px;
+}
+.has-child li a{
+    /* display: none; */
+    color: #4773C3;
+    font-size: 16px;
+    font-weight: 500;
+}
+.has-child li a span{
+    font-size: 10px;
+}
+.has-child:hover ul{
+    display: block;
+    background: #1e3663;
+}
+.has-child li:hover {
+    background: #FAE053;
 }
 
 /* fv-wrap--------- */
@@ -261,11 +281,22 @@ h1 .logo{
     margin-left: 32%;
     display: block;
 }
+.drip-milkAdd{
+    opacity: 0;
+}
 .drip-milk{
     position: absolute;
     margin-top: -48%;
     margin-left: -64%;
-    animation: fadeinDripmilk 3s 1.3s ease-in both;
+    animation: fadeinDripmilk 3s 2.5s ease-in both;
+}
+.milkStart{
+    transform-origin: center center;
+    animation-name: milk-pot;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
 }
 
 /* 星たち */
@@ -277,36 +308,32 @@ h1 .logo{
     transform: matrix(0.93, 0.36, -0.36, 0.93, 0, 0);
     animation: fadeinStars 1.5s 2s ease-in both;
 }
+.star1Add, .star2Add, .star3Add, .star4Add, .star5Add{
+    opacity: 0;
+}
 .star1{
     margin: 3vh 0 0 90%;
     display: inline-block;
-    animation: animationStar1-rotate 3.5s 3.5s ease-in-out normal infinite running,animationStar1-range 3.5s 3.5s ease-in-out normal infinite,animationStar1-fadein 2.5s 3.5s ease-in-out normal infinite;
+    animation: animationStar1-range 3.5s ease-in-out normal infinite,animationStar1-fadein 3.5s ease-in-out normal infinite;
 }
 .star2{
-    transform: matrix(0.87, -0.5, 0.5, 0.87, 0, 0);
     margin: 1vh 0 0 90%;
-    display: block;
-    animation: animationStar2-rotate 6s 2.5s ease-in-out normal infinite running,animationStar2-range 6s 2.5s ease-in-out normal infinite,animationStar2-fadein 6s 2.5s ease-in-out normal infinite;
+    display: inline-block;
+    animation:animationStar2-range 3s ease-in-out normal infinite,animationStar2-fadein 3s ease-in-out normal infinite;
 }
 .star3{
-    transform: matrix(1, -0.09, 0.09, 1, 0, 0);
+    animation:animationStar3-range 2s ease-in-out normal infinite,animationStar3-fadein 2s ease-in-out normal infinite;
 }
 .star4{
-    transform: matrix(0.93, 0.36, -0.36, 0.93, 0, 0);
     margin-left: 5vw;
+    animation:animationStar4-range 6s ease-in-out normal infinite,animationStar4-fadein 6s ease-in-out normal infinite;
 }
 .star5{
     width: 100%;
     height: 15vh;
-    transform: matrix(0.87, -0.5, 0.5, 0.87, 0, 0);
     margin-left: 2vw;
     margin-top: 10vh;
-}
-
-.milk-pot{
-    animation: milk-pot linear infinite;
-    transform-origin: center center;
-    animation: milk-pot 5s both;
+    animation:animationStar5-range 6s ease-in-out normal infinite,animationStar5-fadein 6s ease-in-out normal infinite;
 }
 /* アニメーション設定 */
 /* ミルクポット */
@@ -318,11 +345,9 @@ h1 .logo{
 @keyframes fadeinDripmilk{
     from{
     opacity: 0;
-    transform: translatesy(50px);
     }
     to{
     opacity: 1;
-    transform: translatey(0);
     }
 }
 @keyframes fadeinStars{
@@ -334,16 +359,15 @@ h1 .logo{
     }
 }
 /* star1 */
-@keyframes animationStar1-rotate{
-    0%{ transform:rotate(0);}
-    100%{ transform:rotate(-360deg); }
-}
 @keyframes animationStar1-range{
-    0%   { transform: translateY(0) translateX(0);}
-    100% { transform: translateY(650px) translateX(-250px);}
+    0%   { transform: translateY(0) translateX(0) rotate(0);}
+    100% { transform: translateY(650px) translateX(-250px) rotate(-360deg);}
 }
 @keyframes animationStar1-fadein{
     0%{
+    opacity: 0;
+    }
+    10%{
     opacity: 1;
     }
     100%{
@@ -351,15 +375,50 @@ h1 .logo{
     }
 }
 /* star2 */
-@keyframes animationStar2-rotate{
-    0%{ transform:rotate(0);}
-    100%{ transform:rotate(-200deg); }
-}
 @keyframes animationStar2-range{
-    0%   { transform: translateY(0) translateX(0);}
-    100% { transform: translateY(750px) translateX(-150px);}
+    0%   { transform: translateY(0) translateX(0) rotate(0);}
+    100% { transform: translateY(750px) translateX(-150px) rotate(360deg);}
 }
 @keyframes animationStar2-fadein{
+    0%{
+    opacity: 1;
+    }
+    100%{
+    opacity: 0;
+    }
+}
+/* star3 */
+@keyframes animationStar3-range{
+    0%   { transform: translateY(0) translateX(0) rotate(0);}
+    100% { transform: translateY(650px) translateX(-250px) rotate(-360deg);}
+}
+@keyframes animationStar3-fadein{
+    0%{
+    opacity: 1;
+    }
+    100%{
+    opacity: 0;
+    }
+}
+/* star4 */
+@keyframes animationStar4-range{
+    0%   { transform: translateY(0) translateX(0) rotate(0);}
+    100% { transform: translateY(750px) translateX(-150px) rotate(360deg);}
+}
+@keyframes animationStar4-fadein{
+    0%{
+    opacity: 1;
+    }
+    100%{
+    opacity: 0;
+    }
+}
+/* star5 */
+@keyframes animationStar5-range{
+    0%   { transform: translateY(0) translateX(0) rotate(0);}
+    100% { transform: translateY(750px) translateX(-150px) rotate(-360deg);}
+}
+@keyframes animationStar5-fadein{
     0%{
     opacity: 1;
     }
@@ -412,7 +471,7 @@ canvas{
 }
 .main-ttl-wrap{
     background-color: #FCEEDD;
-    width: 500px;
+    width: 50%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -696,6 +755,7 @@ canvas{
 .contents1,.contents2,.contents3,.contents4,.contents5,.contents6{
     position: absolute;
     z-index: 10;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -1379,4 +1439,37 @@ ul{
   transform: scale(1.03);
   transition-duration: 0.6s;
   transition-timing-function: ease-in-out;
+}
+
+/* CONTACTページ */
+.fv-wrap4{
+    position: relative;
+}
+.fv-wrap4 .logo{
+    margin-top: -90px;
+}
+.slide4{
+    background: url(../contact/img/FV4.png) no-repeat center center;
+    background-size: cover;
+}
+.slide4-ttl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -80px 20px 0 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 100px 0 0 60px;
+}
+.slide4-wrap h2{
+    font-size: 2.5vw;
+    font-weight: 450;
+    line-height: 1.625;
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-align: center;
+    width: 700px;
 }
