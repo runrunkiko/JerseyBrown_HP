@@ -543,20 +543,47 @@ canvas{
     margin-top:25px;
     left: 460px;
 }
+@keyframes animateProduct1{
+    0%{transform:rotate(0deg);}
+    80%{transform:rotate(-1deg);}
+    85%{transform:rotate(1deg);}
+    90%{transform:rotate(-1deg);}
+    95%{transform:rotate(1deg);}
+    100%{transform:rotate(-1deg);}
+}
 .product1{
     position: absolute;
     width: 592px;
+    animation-name: animateProduct1;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 .product-wrap1 h3{
     position: absolute;
     top: 290px;
 }
+/* @keyframes animateIllust_milk{
+    0%{transform:rotate(15deg);}
+    25%{transform:rotate(-15deg);}
+    50%{transform:rotate(15deg);}
+    75%{transform:rotate(-15deg);}
+    100%{transform:rotate(15deg);}
+} */
 .illust_milk{
     position: absolute;
     width: 95px;
     top: 230px;
     left: 450px;
     transform: matrix(0.98, 0.21, -0.21, 0.98, 0, 0);
+    animation-name: animateIllust_milk;
+    animation-duration: 3s;
+    /* animation-delay: 3s; */
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 /* illust-wrap */
 .illust-wrap{
@@ -564,15 +591,46 @@ canvas{
     top: 100px;
     left: 70vw;
 }
+/* @keyframes animateYogurt{
+    0%{transform:rotate(-15deg);}
+    25%{transform:rotate(15deg);}
+    50%{transform:rotate(-15deg);}
+    75%{transform:rotate(15deg);}
+    100%{transform:rotate(-15deg);}
+} */
 .yogurt{
     position: absolute;
     width: 149px;
     top: 30px;
+    animation-name: animateYogurt;
+    animation-duration: 4s;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+/* star6 */
+/* @keyframes animationStar6-range{
+    0%   { transform: rotate(0);}
+    100% { transform: rotate(-360deg);}
+}
+@keyframes animationStar6-fadein{
+    0%{
+    opacity: 1;
+    }
+    50%{
+    opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+} */
 .star6{
     position: absolute;
+    transform: rotate(-45deg);
     width: 53px;
-    left:-50px;
+    left:-100px;
+    animation:animationStar6-range 2.8s 1s ease-in-out normal infinite,animationStar6-fadein 2.8s 1s ease-in-out normal infinite;
 }
 /* product-wrap2 */
 .product-wrap2{
@@ -589,18 +647,42 @@ canvas{
     position: absolute;
     margin-top: 260px;
 }
+@keyframes animateProduct2{
+    0%{transform:rotate(0deg);}
+    80%{transform:rotate(1deg);}
+    85%{transform:rotate(-1deg);}
+    90%{transform:rotate(1deg);}
+    95%{transform:rotate(-1deg);}
+    100%{transform:rotate(1deg);}
+}
 .product2{
     position: absolute;
     width: 580px;
     height: 378px;
-    /* top: 100px; */
+    animation-name: animateProduct2;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+/* @keyframes animateIllust_scop{
+    0%   { transform: translateY(0) translateX(0) rotate(0);}
+    50% { transform: translateY(20px) translateX(-20px) rotate(20deg);}
+    100% { transform: translateY(0px) translateX(0px) rotate(0);}
+} */
 .illust_scop{
     position: absolute;
     width: 80px;
     margin-top: 110px;
     left: 480px;
     transform: matrix(-0.98, -0.19, -0.19, 0.98, 0, 0);
+    animation-name: animateIllust_scop;
+    animation-duration: 3.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 /* product-wrap3 */
 .product-wrap3{
@@ -618,10 +700,24 @@ canvas{
     margin-top: 260px;
     left: 500px;
 }
+@keyframes animateProduct3{
+    0%{transform:rotate(0deg);}
+    80%{transform:rotate(-1deg);}
+    85%{transform:rotate(1deg);}
+    90%{transform:rotate(-1deg);}
+    95%{transform:rotate(1deg);}
+    100%{transform:rotate(-1deg);}
+}
 .product3{
     position: absolute;
     width: 606px;
     left: 40px;
+    animation-name: animateProduct3;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 .stars2{
     position: absolute;
@@ -644,11 +740,23 @@ canvas{
     display: flex;
     justify-content: space-between;
 } 
+@keyframes animateIllustset2{
+    0%{transform:rotate(0deg);}
+    80%{transform:rotate(-2deg);}
+    85%{transform:rotate(2deg);}
+    90%{transform:rotate(-2deg);}
+    95%{transform:rotate(2deg);}
+    100%{transform:rotate(-2deg);}
+}
 .illustset-2-wrap{
     position: relative;
     margin-left: 10%;
-    /* margin-bottom: 100px; */
-    /* 後で調整 */
+    animation-name: animateIllustset2;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 
 }
 .illustset-2-wrap h2{
@@ -1468,4 +1576,41 @@ ul{
     letter-spacing: 0.1em;
     text-align: center;
     width: 700px;
+}
+.contact-ttl{
+    display: block;
+    margin-left: 10%;
+    line-height: 2.2;
+    font-size: 1.7vw;
+    font-weight: 500;
+    color: #4A4A4A;
+    padding: 100px 0 130px 0;
+}
+.contact{
+    margin-left: 10%;
+}
+.formItem{
+    display: flex;
+    margin-bottom: 2.5em;
+    color: #4A4A4A;
+    font-size: 1.7vw;
+}
+.formItem span{
+    font-size: 1vw;
+    color: #FAB353;
+    border: 2px solid #FAB353;
+    border-radius: 4px;
+    padding: 0.2%;
+    margin-left: 2%;
+}
+label{
+    display: block;
+    width: 35%;
+}
+.contact-button{
+    display: block;
+    margin: 0 auto 10% auto;
+}
+input[type="text"]{
+    padding: 2%;
 }

@@ -47,7 +47,42 @@
             </div>
         </header>
         <main>
-            <h2>商品に関するお問い合わせ、業務用に関するお問い合わせは<br>下記のフォームよりお願いいたします。</h2>
+            <div class="contact-ttl"><h2>商品に関するお問い合わせ、業務用に関するお問い合わせは<br>下記のフォームよりお願いいたします。</h2></div>
+            <div>
+            <form action="#">
+                <div class="contact">
+                    <div class="formItem">
+                        <label>氏名<span>必須</span></label>
+                        <input type="text" name="name" placeholder="例）山田太郎" value="">
+                    </div>
+                    <div class="formItem">
+                        <label>ふりがな<span>必須</span></label>
+                        <input type="text" name="furigana" placeholder="例）やまだたろう" value="">
+                    </div>
+                    <div class="formItem">
+                        <label>メールアドレス<span>必須</span></label>
+                        <input type="text" name="email" placeholder="例）guest@example.com" value="">
+                    </div>
+                    <div class="formItem">
+                        <label>お電話番号</label>
+                        <input type="text" name="tel" placeholder="例）0000000000" value="">
+                    </div>
+                    <div class="formItem">
+                        <label>お問い合わせジャンル</label>
+                        <select name="item">
+                            <option value="">お問い合わせ項目を選択してください</option>
+                            <option value="業務用ソフトクリーム">業務用ソフトクリームについて</option>
+                            <option value="その他のお問い合わせ">その他のお問い合わせ</option>
+                        </select>
+                    </div>
+                    <div class="formItem">
+                        <label>お問い合わせ内容</label>
+                        <textarea name="content" rows="10" placeholder="お問合せ内容を入力"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="contact-button">確認画面へ</button>
+            </form>
+</div>
 
         </main>
 
