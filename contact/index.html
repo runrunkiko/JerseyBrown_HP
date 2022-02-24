@@ -52,15 +52,15 @@
             <form action="#">
                 <div class="contact">
                     <div class="formItem">
-                        <label>氏名<span>必須</span></label>
+                        <label><span class="item-name">氏名</span><span class="required">必須</span></label>
                         <input type="text" name="name" placeholder="例）山田太郎" value="">
                     </div>
                     <div class="formItem">
-                        <label>ふりがな<span>必須</span></label>
+                        <label><span class="item-name">ふりがな</span><span class="required">必須</span></label>
                         <input type="text" name="furigana" placeholder="例）やまだたろう" value="">
                     </div>
                     <div class="formItem">
-                        <label>メールアドレス<span>必須</span></label>
+                        <label><span class="item-name">メールアドレス</span><span class="required">必須</span></label>
                         <input type="text" name="email" placeholder="例）guest@example.com" value="">
                     </div>
                     <div class="formItem">
@@ -75,17 +75,21 @@
                             <option value="その他のお問い合わせ">その他のお問い合わせ</option>
                         </select>
                     </div>
-                    <div class="formItem">
-                        <label>お問い合わせ内容</label>
-                        <textarea name="content" rows="10" placeholder="お問合せ内容を入力"></textarea>
+                    <div class="formItem formItem-box">
+                        <label class="contact-contents">お問い合わせ内容</label>
+                        <textarea name="content" rows="10" placeholder="お問合せ内容を入力" class="textarea"></textarea>
                     </div>
                 </div>
                 <button type="submit" class="contact-button">確認画面へ</button>
             </form>
-</div>
-
         </main>
-
+        <footer>
+            <figure><img src="../img/logo_footer.png" alt="ロゴ" class="logo-footer"></figure>
+            <p class="adress">〒080-0015 北海道帯広市西5条南34丁目12番地<br>TEL：0155-67-7331 FAX：0155-67-7372</p>
+            <div class="footer-block">
+                <p class="Copyright">Copyright © 十勝ミルキー All Rights Reserved.</p>
+            </div>
+        </footer>
 
     </div>
 <body>
