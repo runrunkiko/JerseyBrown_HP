@@ -71,10 +71,10 @@ body{
 .has-child ul{
     display: none;
     position: absolute;
-    width: 300px;
+    width: 30vw;
+    background: #fff;
 }
 .has-child li a{
-    /* display: none; */
     color: #4773C3;
     font-size: 16px;
     font-weight: 500;
@@ -87,7 +87,7 @@ body{
     background: #1e3663;
 }
 .has-child li:hover {
-    background: #FAE053;
+    background: #fff;
 }
 
 /* fv-wrap--------- */
@@ -1098,15 +1098,16 @@ ul{
     margin: 0 auto;
 }
 .fa-solid{
-
     color: #707070;
 }
-.area-nav a{
+.area-nav h2{
     display: block;
-    text-decoration: none;
     font-size: 1.3vw;
     color: #000000;
     margin: 2vh 0;
+}
+.area-nav a{
+    text-decoration: none;
 }
 .softcream-illust{
     width: 5vw;
@@ -1119,7 +1120,7 @@ ul{
 }
 .jersey-illust{
     width: 9vw;
-    margin-top: 2vh;
+    margin-top: 2.5vh;
     margin-bottom: 1vh;
 }
 .border1{
