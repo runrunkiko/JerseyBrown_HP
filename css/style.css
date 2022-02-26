@@ -434,9 +434,8 @@ h1 .logo{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 300px;
+    margin-top: 280px;
     animation: fadeinTapu 1s 1.5s ease-in both;
-
     }
 canvas{
     position: absolute;
@@ -471,7 +470,7 @@ canvas{
 }
 .main-ttl-wrap{
     background-color: #FCEEDD;
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -481,6 +480,7 @@ canvas{
     font-weight: 500;
     transform: matrix(0.96, -0.28, 0.28, 0.96, 0, 0);
     margin-left: 4vw;
+    margin-top: 4%;
 }
 .main-ttl-wrap h4 span{
     color:#528DFC;
@@ -609,22 +609,6 @@ canvas{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-/* star6 */
-/* @keyframes animationStar6-range{
-    0%   { transform: rotate(0);}
-    100% { transform: rotate(-360deg);}
-}
-@keyframes animationStar6-fadein{
-    0%{
-    opacity: 1;
-    }
-    50%{
-    opacity: 0.1;
-    }
-    100%{
-        opacity: 1;
-    }
-} */
 .star6{
     position: absolute;
     transform: rotate(-45deg);
@@ -1654,4 +1638,54 @@ select{
     font-family: 'Zen Maru Gothic', sans-serif;
     color: #fff;
     background: #8DC1F7;
+}
+
+@media(max-width: 767px){
+    /*  slideshow
+    --------------------------------*/
+    .slide1{
+        background: url(../img/FV1_sp.png) no-repeat center center;
+        background-size: cover;
+    }
+    h1 .logo{
+        width: 40%;
+        height: auto;
+        margin-top: 5%;
+    }
+    /* スライド1 */
+    .slide1-wrap h2{
+        font-size: 20px;
+        font-weight: 450;
+        line-height: 1.4;
+        color: #fff;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 20%; 
+        left: 11%;
+        width: 700px;
+    }
+        /* スライド2 */
+    .softcream-wrap h2{
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+    }
+    .softcream-wrap h3{
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+    }
+    .softcream-wrap{
+        /* width: 500px; */
+        display: block;
+        position: absolute;
+        top: 18%;
+        right: 11%;
+    }
+    .softcream{
+        width: 130px;
+        height: auto;
+        margin-left: 22vw;
+        box-shadow: 10px 10px 10px -20px #00000029;
+    }
 }
