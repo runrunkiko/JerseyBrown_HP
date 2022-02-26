@@ -323,15 +323,16 @@ h1 .logo{
 }
 .star3{
     margin-top: -10vh;
+    margin-left: 80%;
     animation:animationStar3-range 2.2s 2.5s ease-in-out normal infinite,animationStar3-fadein 2.2s 2.5s ease-in-out normal infinite;
 }
 .star4{
-    /* margin-left: 2vw; */
+    margin-left: 20%;
     margin-top: -10vh;
     animation:animationStar4-range 2.5s 3s ease-in-out normal infinite,animationStar4-fadein 2.5s 3s ease-in-out normal infinite;
 }
 .star5{
-    /* margin-left: 2vw; */
+    margin-left: 60%;
     margin-top: -150vh;
     animation:animationStar5-range 2.8s 1s ease-in-out normal infinite,animationStar5-fadein 2.8s 1s ease-in-out normal infinite;
 }
@@ -1510,6 +1511,9 @@ ul{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+.contents6 h3{
+    padding-top: 1%;
 }
 .button-box6{
     background: url(../about/img/button6.png) no-repeat center center;
