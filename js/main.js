@@ -151,3 +151,12 @@ $(function(){
     });
 
 });
+
+    /**
+     * ハンバーガーメニュー
+     */
+    $('#menuButton').on('click',function(){
+        console.log('クリックしたよ');
+        $('#menuButton').toggleClass('active');
+        $('#nav').toggleClass('active');
+    });

@@ -36,6 +36,9 @@ body{
 /*  header
 --------------------------------*/
 /* nav-list--------- */
+header .menu-button{
+    display: none;
+}
 #nav{
     position: relative;
 }
@@ -1691,5 +1694,111 @@ select{
         height: auto;
         margin-left: 22vw;
         box-shadow: 10px 10px 10px -20px #00000029;
+    }
+}
+
+@media (max-width: 1000px){
+    .nav-list li {
+        display: block;
+        text-align: center;
+    } 
+    header .menu-button{
+        display: block;
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        width: 32px;
+        height: 24px;
+        z-index: 10001;
+    }
+    header .menu-button span{
+        position: absolute;
+        width: 32px;
+        height: 4px;
+        background-color: #333333;
+        border-radius: 4px;
+        /* トランジションの設定 */
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-delay: 0;
+        transition-timing-function: ease-in-out;
+    }
+
+    header .menu-button span:nth-of-type(1){
+        top: 0;
+    }
+
+    header .menu-button span:nth-of-type(2){
+        top: 10px;
+    }
+
+    header .menu-button span:nth-of-type(3){
+        top: 20px;
+    }
+
+    header .menu-button.active span:nth-of-type(1){
+        top: 0;
+        transform: translateY(12px) rotate(-45deg);
+    }
+
+    header .menu-button.active span:nth-of-type(2){
+        opacity: 0;;
+    }
+
+    header .menu-button.active span:nth-of-type(3){
+        top: 0;
+        transform: translateY(12px) rotate(45deg);
+    }
+    #nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    header nav{
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.98);
+        /* アニメーション */
+        animation: unset;
+        /* display: none; */
+        opacity: 0;
+        pointer-events: none;
+        /* トランジションの設定 */
+        transition-property: all;
+        transition-duration: 0.6s;
+        transition-delay: 0;
+        transition-timing-function: ease-in-out;
+        z-index: -1;
+    }
+    header nav.active{
+        /* display: block; */
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 10000;
+    }
+    header .container{
+        display: block;
+    }
+    header .nav-list{
+        position: unset;
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 40px 0 0 0;
+        margin-left: 20%;
+        margin-top: 40%;
+    }
+    header .nav-list li{
+        display: block;
+        text-align: left;
+    }
+    .has-child ul{
+        display: block;
+        position: static;
+        width: 100%;
+        background: #fff;
+    }
+    .contact-wrap{
+        width: 100%;
     }
 }
