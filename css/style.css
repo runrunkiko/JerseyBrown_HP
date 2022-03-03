@@ -51,9 +51,14 @@ header .menu-button{
     align-items: center;
     z-index: 10;
     }
+.nav-list > li{
+    margin-left: 2.5vw;
+}
+.contact-wrap > li{
+    margin-left: 2.5vw;
+}
 .nav-list a{
     line-height: 1.4;
-    margin-left: 2.5vw;
     text-decoration: none;
     font-size: 1.5vw;
     color: #000000;
@@ -74,8 +79,14 @@ header .menu-button{
 .has-child ul{
     display: none;
     position: absolute;
-    width: 30vw;
+    width: 20vw;
     background: #fff;
+    border: solid 3px #707070;
+    border-radius: 10px;
+    padding: 10%;
+}
+.has-child li{
+    display: inline-block;
 }
 .has-child li a{
     color: #4773C3;
@@ -87,10 +98,10 @@ header .menu-button{
 }
 .has-child:hover ul{
     display: block;
-    background: #1e3663;
 }
 .has-child li:hover {
-    background: #fff;
+    border-bottom: yellow 3px solid;
+    padding-bottom: 10px;
 }
 
 /* fv-wrap--------- */
@@ -1896,14 +1907,14 @@ select{
     .product-wrap1 h3{
             position: absolute;
             margin-top: 0;
-            top: 60vh;
+            top: 50vw;
     }
     .illust_milk{
             position: absolute;
             width: 50%;
             margin-top: 0;
             padding-top: 5%;
-            top: 300px;
+            top: 40vw;
             left: 70vw;
             max-width: 100px;
     }
