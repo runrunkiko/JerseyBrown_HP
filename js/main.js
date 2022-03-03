@@ -6,7 +6,7 @@ $('#slideContents').slick({
 	// ページ遷移のスピード
 	speed: 1000,
 	// ページ送りの表示
-	dots: true,
+	dots: false,
 	// マウスホバー時にスライドを止めない
 	pauseOnHover: false,
 	// ドット選択時にスライドを止めない
@@ -14,7 +14,6 @@ $('#slideContents').slick({
 	// フェード
 	fade: true,
 });
-	
 // ミルクのたぷたぷ
 var unit = 100,
     canvasList, // キャンバスの配列
